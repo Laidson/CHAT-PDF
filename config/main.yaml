@@ -1,0 +1,21 @@
+chunks_spliter:
+  separator: \n
+  chunk_size: 1000
+  chunk_overlap: 200
+vector_store: 
+  vector_supplier: HUGGINGFACE
+model_supplier: HUGGINGFACE
+HuggingFaceHub:
+  repo_id: google/flan-t5-xxl
+  model_temperature: 0.5
+  model_length: 512
+gpt4all:
+  model: ./ggml-gpt4all-j-v1.3-groovy.bin
+  n_ctx: 1000
+  backend: gptj
+  verbose: False
+memory:
+  memory_key: chat_history
+  return_messages: True
+ 
+  
